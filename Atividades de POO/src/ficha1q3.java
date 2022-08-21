@@ -1,6 +1,6 @@
-/* Escreva um algoritmo em Java para realizar o calculo de  ́area de um trapezio
+/* Escreva um algoritmo em Java para realizar o calculo de area de um trapezio
 retângulo. Todas as entradas do usuário devem estar em cm. A saıda do algoritmo
-deve ser a  ́area do trap ́ezio em cm2 no console; 
+deve ser a  ́area do trapezio em cm2 no console; 
 (e.g. ”A  ́area do trapezio em cm2  ́e ”).
  */
 
