@@ -1,5 +1,5 @@
-/* 6. Crie um algoritmo que preencha um Array com 100 numeros inteiros aleatoriamente e imprima os
-elementos numericos que sejam pares. */ 
+/* 6. Crie um algoritmo que preencha um Array com 100 numeros inteiros aleatoriamente 
+e imprima os elementos numericos que sejam pares. */ 
 
 package Ficha02;
 
