@@ -22,7 +22,6 @@ public class Cliente {
 		this.nAgencia = nAgencia;
 	}
 	
-	
 	@Override
 	public String toString() {
 		return "Nome: " + nome + " Saldo: " + saldo + " Nº Conta: " + nConta + " Nº Agencia: " + nAgencia + " Banco: " + banco;
@@ -33,6 +32,4 @@ public class Cliente {
 		Cliente c = (Cliente) obj;
 		return this.saldo == c.saldo;
 	}
-	
-	
 }
