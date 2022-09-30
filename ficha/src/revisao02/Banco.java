@@ -27,7 +27,7 @@ public class Banco {
 		//System.out.println(c2.toString());
 		//System.out.println(c3.toString());
 		
-		//METODO EQUALS
+		//Metodo equals
 		System.out.println(c1.equals(c1));
 		//System.out.println(c2.equals(c4));
 	}
