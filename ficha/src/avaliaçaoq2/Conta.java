@@ -1,30 +1,31 @@
 package avaliaçaoq2;
+
 import java.util.Objects;
 
 public class Conta {
-	String nomeBanco;
-	float numeroConta;
+	
+	//String nomeBanco;
+	String numeroConta;
 	float saldo;
 	boolean status;
 	
-	
-	public Conta(String nomeBanco) {
-		this.nomeBanco = nomeBanco;
-		this.numeroConta = 1234.5f;
-		this.saldo = 1f;
+	public Conta(String numeroConta) {
+		//this.nomeBanco = nomeBanco;
+		this.numeroConta = numeroConta;
+		this.saldo = 0f;
 		this.status = true;
-	}
-	
-	public Conta() {
-		
 	}
 	
 	public void contaAtivada() {
-		this.status = true;
+		if(this.status == false) {
+			this.status = true;
+		}
 	}
 	
 	public void contaDesativada() {
-		this.status = false;
+		if(this.status == true) {
+			this.status = false;
+		}
 	}
 	
 	public void consultarSaldo() {
@@ -36,7 +37,7 @@ public class Conta {
 	}
 
 	public boolean sacar(float quantia) {
-		if(quantia > 0 && this.saldo <= quantia && this.status == true) {
+		if(quantia > 0 && this.saldo >= quantia && this.status == true) {
 			this.saldo -= quantia;
 			return true;
 		}else {
@@ -68,12 +69,13 @@ public class Conta {
 		if (getClass() != obj.getClass())
 			return false;
 		Conta other = (Conta) obj;
-		return Float.floatToIntBits(numeroConta) == Float.floatToIntBits(other.numeroConta);
+		return Objects.equals(numeroConta, other.numeroConta);
 	}
 
 	@Override
 	public String toString() {
-		return "Conta [nomeBanco=" + nomeBanco + ", numeroConta=" + numeroConta + ", saldo=" + saldo + ", status="
-				+ status + "]";
-	}	
+		return "Conta [numeroConta=" + numeroConta + ", saldo=" + saldo + ", status=" + status + "]";
+	}
+	
+	
 }
